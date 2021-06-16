@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    background-color: ivory;
+}
+h1{
+    text-align: center;
+    margin-top:3% ;
+}
