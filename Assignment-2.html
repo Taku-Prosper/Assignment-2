@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enquiries Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+        <link href="designing.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Welcome To Our Enquiries Page</h1>
+        <hr><br>
+        <form id="myForm" class="form" action="#" method="POST" onsubmit="ClearField(); newWindow(); return false">
+        <div class="inputBox">
+            <span><b>Full Name:</b></span>
+            <input type="text" name="" required="required" id="name">
+        </div>
+        <br>
+        <div class="inputBox">
+            <span><b>Number:</b></span>
+            <input type="tel" name="" required="required" id="number">
+        </div>
+        <br>
+        <div class="inputBox">
+            <span><b>Email:</b></span>
+            <input type="text" name="" required="required" id="email">
+        </div>
+        <br>
+        <div class="inputBox">
+            <span><b>Enquiry:</b></span>
+            <textarea required="required" id="enquiry"></textarea>
+        </div>
+        <br>
+        <div class="inputBox">
+            <input type="submit" name="" value="Submit">
+        </div>
+    </form>
+    <script>
+        function ClearFields() {
+            document.getElementById('name').value = '';
+            document.getElementById('number').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('enquiries').value = '';
+        }
+        function newWindow() {
+            var a = document.getElementById('name');
+            var b = document.getElementById('number');
+            var c = document.getElementById('email');
+            var d = document.getElementById('enquiries');
+            var w = window.open();
+
+            w.document.write(a + b + c + d);
+        }
+    </script>
+    </body>
+</html>
